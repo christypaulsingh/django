@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+/*home.html*/
+h1{
+    width:100vw;
+    background-color: lightseagreen;
+    color:white;
+    text-transform: capitalize;
+    text-align: center;
+    padding:10px 0px;
+    letter-spacing: 1px;
+}
+.img {
+    margin:20px 85px;
+}
+.img .img1{
+    margin: 0px 10px;
+}
+.button {
+    margin:10px 24%;
+}
+.button button{
+    margin:0 10px;
+    padding:8px;
+    background-color:lightseagreen ;
+    border:none;
+    border-radius: 5px;
+
+}
+.button button a{
+    text-decoration: none;
+    font-size: 18px;
+    color:white;
+}
+.button button a:hover{
+    color:black;
+}
+
+/*views.html*/
+.table{
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.table th{
+    padding:10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.table td{
+    padding:12px;
+    font-size: 17px;
+}
+
+/*add.html*/
+.addForm{
+    width:320px;
+    height:580px;
+    margin: 20px 40%;
+    border: 1px solid black;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px 2px black;   
+}
+.addForm h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+}
+.addForm .form-group{
+    margin: 10px 15px;
+    padding:5px;
+}
+.addForm .form-group label{
+    font-size: 17px;
+    font-weight: 400;
+
+}
+.addForm .form-group input{
+    float: right;
+    padding:5px;
+    background-color: lightseagreen;
+    border: 1px solid black;
+}
+.addForm .form-group input:hover{
+    background-color:white;
+}
+.addForm .form-group #roles{
+    width:65%;
+    float: right;
+    padding:5px;
+    background-color: lightseagreen;
+    border: 1px solid black;
+
+}
+.addForm .form-group #department{
+    width:65%;
+    float: right;
+    padding:5px;
+    background-color: lightseagreen;
+    border: 1px solid black;
+
+}
+.addForm .form-group #hire_date{
+    width:65%;
+}
+.addForm .sumbit button{
+    margin:15px 30%;
+    padding:10px;
+    background-color:lightseagreen ;
+    font-size: 18px;
+    color:black;
+    border:none;
+    border-radius: 10px;
+
+}
+.addForm .sumbit button:hover{
+    color:white;
+}
+.update{
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.update th{
+    padding:10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.update td{
+    padding:12px;
+    font-size: 17px;
+}
+.update td a{
+    text-decoration: none;
+    border:1px solid lightseagreen;
+    color:black;
+    background-color: lightseagreen;
+    padding:4px;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+.update td a:hover{
+    color:white;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+<body>
+    <h1>Employee managemant system</h1>
+    <div class="img">
+        <img src="{% static 'image/employee2.jpg'%}" alt="" class="img1">
+        <img src="{% static 'image/employee5.jpg'%}" alt="" class="img2">
+    </div>
+    <div class="button">
+        <button><a href="viewsAllEmployee">View All Employee</a></button>
+        <button><a href="addEmployee">Add Employee</a></button>
+        <button><a href="updateEmployee">Update Employee</a></button>
+        <button><a href="DeleteEmployee">Delete Employee</a></button>
+    </div>
+</body>
+</html>

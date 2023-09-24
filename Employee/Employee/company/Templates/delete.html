@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Employee</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+</head>
+<body style="background-color: rgba(32, 178, 170,0.5);">
+    <h1>Delete Employee</h1>
+    {% block content %}
+    <table class="update" border="2">
+        <tr>
+            <th>S.no</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Role</th>
+            <th>Salary</th>
+            <th>Bonus</th>
+            <th>Branch</th>
+            <th>Hire_Date</th>
+            <th>Phone</th>
+            <th>Delete</th>
+        </tr>
+        {% for data in datas %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{data.First_name}}</td>
+            <td>{{data.Last_name}}</td>
+            <td>{{data.Age}}</td>
+            <td>{{data.Email}}</td>
+            <td>{{data.Dept}}</td>
+            <td>{{data.Roles}}</td>
+            <td>{{data.Salary}}</td>
+            <td>{{data.Bonus}}</td>
+            <td>{{data.Branch}}</td>
+            <td>{{data.Hire_Date}}</td>
+            <td>{{data.Phone}}</td>
+            <td><a href="DeleteEmployeeDetails/{{data.id}}">Delete</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endblock %}
+    
+</body>
+</html>
